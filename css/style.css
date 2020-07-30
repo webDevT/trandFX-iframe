@@ -257,6 +257,99 @@ body {
   .button-wrapper {
     position: absolute;
     bottom: 0;
+    height: 40px;
+    width: 100vw;
+    left: 0;
+  }
+  .button-wrapper .button {
+    height: 100%;
+    width: 50vw;
+    -webkit-border-radius: 0;
+            border-radius: 0;
+    margin-right: 0;
+    font-size: 16px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+  }
+  .header {
+    position: relative;
+    padding-bottom: 40px;
+  }
+  .header .wrapper {
+    width: 100vw;
+  }
+  .logo {
+    padding-left: 20px;
+    padding-right: 15px;
+    width: 143px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    border-right: 0.533vw solid #efefef;
+  }
+  .logo img {
+    width: 108px;
+  }
+  .header__text-wrapper {
+    font-size: 12px;
+    padding-left: 1.333vw;
+    padding-right: 1.333vw;
+  }
+  .header__right {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .header__right .button--green,
+  .header__right .button--red {
+    height: 100%;
+    margin-right: 0;
+    -webkit-border-radius: 0;
+            border-radius: 0;
+    width: 16.667vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 12px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+  }
+  .header__right .button--green img,
+  .header__right .button--red img {
+    width: 30px;
+    max-height: 25px;
+  }
+  .home-btn {
+    padding-right: 3.333vw;
+    padding-left: 1.333vw;
+  }
+  .home-btn img {
+    width: 31px;
+    height: 31px;
+  }
+  .footer {
+    font-size: 12px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
+  .footer__secure img {
+    width: 15px;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 420px) {
+  /**/
+  .top-header {
+    height: 2.800vw;
+  }
+  .button-wrapper {
+    position: absolute;
+    bottom: 0;
     height: 8vw;
     width: 100vw;
     left: 0;
@@ -321,6 +414,7 @@ body {
   .header__right .button--green img,
   .header__right .button--red img {
     width: 7.733vw;
+    max-height: 100%;
   }
   .home-btn {
     padding-right: 3.333vw;
